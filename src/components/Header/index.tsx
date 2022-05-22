@@ -1,7 +1,13 @@
+import { ReactNode } from 'react'
 import { StyledHeader } from './styled'
 
-export function Header () {
+interface IHeader {
+  children: ReactNode
+}
+export function Header ({ children }: IHeader) {
   return (
-    <StyledHeader />
+    <StyledHeader>
+      {children}
+    </StyledHeader>
   )
 }
