@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     text-decoration: none;
 
-    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family:  'Cinzel', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
       -webkit-font-smoothing: antialiased;

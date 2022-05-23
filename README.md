@@ -1,6 +1,11 @@
 # Desafio OneBlue FrontEnd
 
-<!-- O candidato(a) deverá criar uma aplicação em ReactJS> com temática de layout de sua escolha e integrar com a aplicação backend presente neste repositório o objetivo desta aplicação é uma interação visual com a API de cadastro de usuário e login do mesmo. Com trativas de erros e validações Utilizar: - ReactJS - Yup - Styled-components(opcional) - Material-UI(opcional)
-Ao final da construção do Código o Candidato(a) deverá enviar o que foi construido em um repositorio do github. -->
-
 ## Para esse o tema escolhido é: advocacia
+
+Imagens, fontes e icones lembram a politica e a justiça.
+
+Um formulario simples no final com senha e nome foi adicionando, embora tenha sido comentado um código para telefone, email no componente formulário.
+
+A página também é responsiva.
+
+No total as ferramentas utilizadas foram styled components, yup para validação, axios para a comunicação com o backend.

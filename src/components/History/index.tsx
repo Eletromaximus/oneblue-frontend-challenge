@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Card } from '../Card'
+import { Card } from './Card'
 
 // import { Container } from './styles';
 export const HistoryStyle = styled.div`
