@@ -9,7 +9,6 @@ export function Banner ({ retang }: IBanner) {
   return (
     <BannerStyle>
       {retang && <Retangulo />}
-
     </BannerStyle>
 
   )

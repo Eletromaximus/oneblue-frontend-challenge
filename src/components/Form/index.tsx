@@ -8,8 +8,13 @@ interface IFormInputs {
   name: string,
   // email: string,
   // cel: string,
-  password: string
+  password: string,
 }
+
+interface IForm {
+  address: string
+}
+
 const schema = yup.object({
   name: yup.string().required('Por favor, insira um nome valido'),
   // email: yup.string().email('Por favor, insira um email valido').required(),
@@ -34,20 +39,7 @@ const schema = yup.object({
 //   )
 // }
 
-const onSubmit = async (data: IFormInputs) => {
-  try {
-    const response = await api.post('/user/cadaster', data)
-    console.log(response)
-    if (response.status === 200) {
-      alert('cadastro realizado com sucesso')
-    }
-  } catch (err) {
-    console.log(err)
-    alert('Erro no cadastro, tente novamente')
-  }
-}
-
-export function Form () {
+export function Form ({ address }: IForm) {
   const {
     register,
     handleSubmit,
@@ -56,6 +48,19 @@ export function Form () {
   } = useForm<IFormInputs>({
     resolver: yupResolver(schema)
   })
+
+  const onSubmit = async (data: IFormInputs) => {
+    try {
+      const response = await api.post(address, data)
+      console.log(response)
+      if (response.status === 200) {
+        alert('cadastro realizado com sucesso')
+      }
+    } catch (err) {
+      console.log(err)
+      alert('Erro no cadastro, tente novamente')
+    }
+  }
 
   return (
     <FormStyle>

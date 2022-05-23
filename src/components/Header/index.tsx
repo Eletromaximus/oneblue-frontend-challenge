@@ -1,13 +1,10 @@
-import { ReactNode } from 'react'
 import { StyledHeader } from './styled'
 
-interface IHeader {
-  children: ReactNode
-}
-export function Header ({ children }: IHeader) {
+export function Header () {
   return (
     <StyledHeader>
-      {children}
+      <a href='/'><h2>Direito&Advocacia</h2></a>
+      <a href="/login"><b>Login</b></a>
     </StyledHeader>
   )
 }

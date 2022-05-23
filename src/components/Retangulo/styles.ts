@@ -23,6 +23,4 @@ export const RetanguloStyle = styled.div`
     border: none;
     padding: 0 10px;
   }
-
-  if ()
 `
